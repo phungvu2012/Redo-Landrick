@@ -1,0 +1,169 @@
+@import 'variable';
+@import 'base';
+@import 'header';
+@import 'footer';
+
+.hero {
+    padding: 170px 0;
+}
+
+.para-desc {
+    font-size: 1.125rem;
+}
+
+.inner-icon {
+    width: 24px;
+}
+
+.partner {
+    padding: 24px 0;
+    border-top: 1px solid #e9ecef;
+    border-bottom: 1px solid #e9ecef;
+
+    &__box-logo {
+        padding: 24px 12px;
+        text-align: center;
+    }
+
+    &__logo {
+        max-height: 25px;
+    }
+}
+
+.title {
+    font-size: 1.875rem;
+    font-weight: weight(medium);
+}
+
+.work {
+    background-color: #f8f9fc;
+    padding: 60px 0;
+
+    &__box-heading {
+        text-align: center;
+        
+    }
+
+    &__link {
+        display: inline-block;
+        font-weight: weight(medium);
+        text-decoration: none;
+
+        i {
+            margin-left: 0.25rem;
+            font-size: 0.75rem;
+            vertical-align: middle;
+        }
+    }
+}
+
+.list-unstyle {
+    margin: 0;
+    padding: 0;
+    
+    list-style: none;
+
+    li {
+        margin: 2px 0;
+    }
+
+    &__check-icon {
+        vertical-align: middle;
+        color: $primary-color;
+        margin-right: 0.5rem;
+    }
+}
+
+.contact {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 0.25rem;
+    border: 1px solid rgba(0, 0, 0, .125);
+    font-size: 0.875rem;
+
+}
+
+.form {
+    &__input {
+        display: flex;
+        border: 1px solid rgba(0, 0, 0, .125);
+        border-radius: 0.4rem;
+        margin-bottom: 1rem;
+        @include center-element;
+    }
+
+    &__icon {
+        padding: 0 16px;
+    }
+
+    .form-control {
+        border: none;
+        outline: none;
+    }
+}
+
+.testi {
+    padding: 100px 0;
+
+    &__heading {
+        text-align: center;
+    }
+}
+
+
+.carousel-indicators {
+    top: calc(100% + 20px);
+    bottom: auto;
+}
+
+.card-box {
+    img {
+        max-height: 25px;
+    }
+
+    p {
+        text-align: center;
+    }
+}
+
+.card {
+    border: 0;
+}
+
+.pricing {
+    padding: 100px 0;
+
+    &__card {
+        padding: 48px 24px;
+        border-bottom: 3px solid #2f55d4;
+        box-shadow: 0 0 3px rgba(60, 72, 88, 0.15);
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            box-shadow: 0 3px 5px rgba(60, 72, 88, 0.5);
+        }
+    }
+
+    &__card-price {
+        font-size: 42px;
+    }
+}
+
+.faq {
+    padding: 60px 0;
+    background-color: #f8f9fc;
+
+    &__heading {
+        padding: 16px;
+        margin: 48px 0;
+        text-align: center;
+    }
+}
+
+.faq-box {
+    display: flex;
+    
+    &__left {
+        padding: 0 6px;
+    }
+}

@@ -1,0 +1,140 @@
+@function weight($name) {
+    @return map-get($map: $font-weight, $key: $name);
+}
+
+@mixin center-element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primary: #{ $primary-color };
+    --text-primary: #000;
+    --background-primary: #{ $background-primary };
+}
+
+body {
+    color: var(--text-primary);
+    background-color: var(--background-primary);
+
+    font-family: "Nunito", sans-serif;
+    font-size: 100%;
+    font-weight: weight(regular);
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 2.8125rem;
+    font-weight: weight(medium);
+    letter-spacing: 2px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+.text-primary2 {
+    color: $primary-color !important;
+}
+
+.btn {
+    padding: 8px 20px;
+    border-radius: 6px;
+    font-weight: weight(medium);
+    transition: all 0.3s;
+}
+
+.btn + .btn {
+    margin-left: 0.75rem;
+}
+
+.btn-outline-primary-shadow {
+    color: $primary-color;
+    background-color: rgba($color: $primary-color, $alpha: 0.1);
+    box-shadow: 0 3px 5px 0 rgba($color: $primary-color, $alpha: 0.3);
+    
+    &:hover {
+        color: #fff;
+        background-color: $primary-color;
+    }
+}
+
+.btn-primary-shadow {
+    color: #fff;
+    background-color: $primary-color;
+    box-shadow: 0 3px 5px 0 rgba($color: $primary-color, $alpha: 0.3);
+
+    &:hover {
+        color: #fff;
+        background-color: darken($color: $primary-color, $amount: 10%);
+    }
+}
+
+.btn-outline-primary2 {
+    border: 1px solid $primary-color;
+    color: $primary-color;
+    background-color: $background-primary;
+
+    &:hover {
+        color: #fff;
+        background-color: $primary-color;
+    }
+}
+
+.btn-primary2 {
+    color: #fff;
+    background-color: $primary-color;
+
+    &:hover {
+        color: #fff;
+        background-color: darken($color: $primary-color, $amount: 10%);
+    }
+}
+
+.text-muted {
+    color: #8492a6 !important
+}
+
+.py-60 {
+    padding: 60px
+}
+
+.shape {
+    position: absolute;
+    pointer-events: none;
+    right: 0;
+    bottom: -2px;
+    left: 0;
+    overflow: hidden;
+    z-index: -1;
+}
+
+@mixin media-tablet-and-mobile() {
+    @media (max-width: 61.99875em) {
+        @content;
+    }
+}
+
+@mixin media-tablet() {
+    @media (min-width: 48em) and (max-width: 61.99875em) {
+        @content;
+    }
+}
+
+@mixin media-mobile() {
+    @media (max-width: 47.99875em) {
+        @content;
+    }
+}

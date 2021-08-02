@@ -1,0 +1,32 @@
+mixin loadItemNav() 
+    each navItem, key in navbar
+        li(class="main-nav__item")
+            if navItem.item
+                a(href=`${ navItem.link }` class="main-nav__link") 
+                    | #{ key }
+                    i(class="main-nav__dropdown fas fa-chevron-down")
+                ul(class=`sub-nav ${navItem.type}`)
+                    if navItem.type == 'full-width-img'
+                        each subNavItem in navItem.item
+                            +navItemImg(subNavItem.subName, subNavItem.link, subNavItem.img)
+                    else
+                        each subNavItem in navItem.item
+                            li.sub-nav__item
+                                if subNavItem.item
+                                    a(href=`${subNavItem.link}` class="sub-nav__link") 
+                                        | #{ subNavItem.subName }
+                                        i(class="main-nav__dropdown main-nav__dropdown--end fas fa-chevron-down")
+                                    ul(class=`sub-nav sub-nav--end`)
+                                        each sub2NavItem in subNavItem.item ? subNavItem.item : []
+                                            li.sub-nav__item
+                                                a(href=`${sub2NavItem.link}` class="sub-nav__link") #{ sub2NavItem.subName }
+                                else
+                                    a(href=`${subNavItem.link}` class="sub-nav__link") #{ subNavItem.subName }
+            else 
+                a(href=`${ navItem.link }` class="main-nav__link") #{ key }
+
+mixin navItemImg(name, url, urlImg)
+    li.sub-nav__item
+        a(href=`${url}` class="sub-nav__link")
+            img(src=`${ urlImg }`, alt=`${ name }` class="img-fluid")
+            p #{ name }

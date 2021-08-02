@@ -1,0 +1,44 @@
+.footer-site {
+    color: #ADB5BD;
+    background-color: #202942;
+
+    a {
+        text-decoration: none;
+        color: inherit;
+
+        &:hover {
+            color: lighten($color: #ADB5BD, $amount: 20);
+        }
+    }
+
+    &__link {
+        display: block;
+        margin-bottom: 4px;
+
+        &:before {
+            content: '>';
+            margin-right: 0.8rem;
+        }
+
+        &:hover {
+            color: lighten($color: #ADB5BD, $amount: 20);
+        }
+    }
+
+    &__copyright {
+        padding: 30px 0;
+        border-top: 1px solid #ADB5BD;
+    }
+}
+
+.social-link {
+    display: inline-block;
+    border: 1px solid #3c4858;
+    border-radius: 4px;
+    font-size: 16px;
+    text-align: center;
+
+    & + & {
+        margin-left: 4px;
+    }
+}

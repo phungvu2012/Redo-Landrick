@@ -1,0 +1,311 @@
+extends templates/layout
+
+block main
+    // Begin: Hero
+    section.hero
+        .container
+            .row
+                .col-md-7
+                    .section-heading.mb-4.mb-0-md
+                        h1.mb-4
+                            | Our Creativity Is Your 
+                            span.text-primary2 Success
+                        p.para-desc.text-muted.mb-4 Launch your campaign and benefit from our expertise on designing and managing conversion centered bootstrap v5 html page.
+                        button.btn.btn-primary-shadow.mt-2
+                            i(class="inner-icon far fa-envelope")
+                            | Get Started
+                        button.btn.btn-outline-primary2.mt-2
+                            i(class="inner-icon far fa-file")
+                            | Documentation
+                .col-md-5
+                    img(src="./assets/img/Startup_SVG.svg", alt="hero" class="img-fluid")
+    // End: Hero
+
+    //Begin: Partners
+    .partner
+        .container
+            .row
+                .col-6.col-md-2
+                    div.partner__box-logo
+                        img(src="./assets/img/amazon.svg", alt="amazon logo" class="partner__logo img-fluid")
+                .col-6.col-md-2
+                    div.partner__box-logo
+                        img(src="./assets/img/google.svg", alt="google logo" class="partner__logo img-fluid")
+                .col-6.col-md-2
+                    div.partner__box-logo
+                        img(src="./assets/img/lenovo.svg", alt="lenovo logo" class="partner__logo img-fluid")
+                .col-6.col-md-2
+                    div.partner__box-logo
+                        img(src="./assets/img/paypal.svg", alt="paypal logo" class="partner__logo img-fluid")
+                .col-6.col-md-2
+                    div.partner__box-logo
+                        img(src="./assets/img/shopify.svg", alt="shopify logo" class="partner__logo img-fluid")
+                .col-6.col-md-2
+                    div.partner__box-logo
+                        img(src="./assets/img/spotify.svg", alt="spotify logo" class="partner__logo img-fluid")
+    //End: Partners
+
+    // Begin: How it work
+    section.work
+        .container
+            .row.justify-content-center
+                .col-md-8
+                    .work__box-heading
+                        h2.title.mb-4 How It Work ?
+                        p.text-muted.mb-4
+                            | Start working with 
+                            span.text-primary2.fw-bold Landrick 
+                            |that can provide everything you need to generate awareness, drive traffic, connect.
+            .row.justify-content-between.align-items-center
+                .col-md-5.col.lg-4.mt-4
+                    img(src="./assets/img/SEO_SVG.svg", alt="seo" class="img-fluid")
+                .col-md-6.col-lg-6.mt-4
+                    .work__box-content
+                        h4.mb-4.title Change the way you build websites
+                        p.mb-3.text-muted You can combine all the Landrick templates into a single one, you can take a component from the Application theme and use it in the Website.
+                        ul.list-unstyle.text-muted.mb-3
+                            li 
+                                i(class="list-unstyle__check-icon far fa-check-circle")
+                                | Digital Marketing Solutions for Tomorrow
+                            li 
+                                i(class="list-unstyle__check-icon far fa-check-circle")
+                                | Our Talented & Experienced Marketing Agency
+                            li 
+                                i(class="list-unstyle__check-icon far fa-check-circle")
+                                | Create your own skin to match your brand
+                        a(href="#" class="work__link text-primary2")
+                            | Find Out More
+                            i(class="fas fa-chevron-right")
+            .row.justify-content-between.align-items-center
+                .col-md-6.col-lg-6.mt-4
+                    .work__box-content
+                        h4.title.mb-4
+                            | Speed up your development with 
+                            span.text-primary2 Landrick 
+                        p.mb-3.text-muted Using Landrick to build your site means never worrying about designing another page or cross browser compatibility. Our ever-growing library of components and pre-designed layouts will make your life easier.
+                        ul.list-unstyle.text-muted.mb-3
+                            li 
+                                i(class="list-unstyle__check-icon far fa-check-circle")
+                                | Digital Marketing Solutions for Tomorrow
+                            li 
+                                i(class="list-unstyle__check-icon far fa-check-circle")
+                                | Our Talented & Experienced Marketing Agency
+                            li 
+                                i(class="list-unstyle__check-icon far fa-check-circle")
+                                | Create your own skin to match your brand
+                        a(href="#" class="work__link text-primary2")
+                            | Find Out More
+                            i(class="fas fa-chevron-right")
+                .col-md-6.col.lg-4.mt-4
+                    .contact
+                        div.contact__image
+                            img(src="./assets/img/Mobile_notification_SVG.svg", alt="mobile" class="img-fluid")
+                        form(action="#" class="form")
+                            .row
+                                .col-12
+                                    label(for="fname" class="fw-bold") 
+                                        | Name: 
+                                        span.text-danger *
+                                    .form__input
+                                        i(class="form__icon far fa-user") 
+                                        input(type="text" id="fname" class="form-control" name="name" placeholder="Name" required)
+                                .col-12
+                                    label(for="femail" class="fw-bold") 
+                                        | Email: 
+                                        span.text-danger *
+                                    .form__input
+                                        i(class="form__icon far fa-envelope")
+                                        input(type="email" id="femail" class="form-control" name="email" placeholder="Email" required)
+                                .col-12
+                                    label(for="fpassword" class="fw-bold") 
+                                        | Password: 
+                                        span.text-danger *
+                                    .form__input
+                                        i(class="form__icon fas fa-key")
+                                        input(type="password" id="fpassword" class="form-control" name="password" placeholder="Password" required)
+                                .col-12
+                                    button.btn.btn-primary-shadow.w-100 Download
+    // End: How it work
+
+    //Start: Testi
+    section.testi
+        .container
+            .row.justify-content-center
+                .col-md-8
+                    .testi__heading.mb-4
+                        span.fw-bold We believe in building each other and hence
+                        h2.title.mt-2.mb-4 Work with some amazing partners
+                        p.text-muted 
+                        | Start working with 
+                        span.text-primary2.fw-bold Landrick 
+                        | that can provide everything you need to generate awareness, drive traffic, connect.
+            .row
+                .col-12
+                    #carouselExampleIndicators.carousel.carousel-dark.slide(data-bs-ride='carousel')
+                        .carousel-indicators
+                            button.active(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='0' aria-current='true' aria-label='Slide 1')
+                            button(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='1' aria-label='Slide 2')
+                        .carousel-inner
+                            .carousel-item.active
+                                .card-box
+                                    .row.justify-content-between
+                                        .col-4.col-md-3
+                                            .card
+                                                img(src="./assets/img/amazon.svg", alt="amazon")
+                                                p.mt-4.mb-3.text-muted " It seems that only fragments of the original text remain in the Lorem Ipsum texts used today. "
+                                                p.text-primary2.fw-bold - Dean Tolle
+                                        .col-4.col-md-3
+                                            .card
+                                                img(src="./assets/img/shopify.svg", alt="amazon")
+                                                p.mt-4.mb-3.text-muted " It seems that only fragments of the original text remain in the Lorem Ipsum texts used today. "
+                                                p.text-primary2.fw-bold - Dean Tolle
+                                        .col-4.col-md-3
+                                            .card
+                                                img(src="./assets/img/paypal.svg", alt="amazon")
+                                                p.mt-4.mb-3.text-muted " It seems that only fragments of the original text remain in the Lorem Ipsum texts used today. "
+                                                p.text-primary2.fw-bold - Dean Tolle
+                            .carousel-item
+                                .card-box
+                                    .row.justify-content-evenly
+                                        .col-4.col-md-3
+                                            .card
+                                                img(src="./assets/img/amazon.svg", alt="amazon")
+                                                p.mt-4.mb-3.text-muted " It seems that only fragments of the original text remain in the Lorem Ipsum texts used today. "
+                                                p.text-primary2.fw-bold - Dean Tolle
+                                        .col-4.col-md-3
+                                            .card
+                                                img(src="./assets/img/shopify.svg", alt="amazon")
+                                                p.mt-4.mb-3.text-muted " It seems that only fragments of the original text remain in the Lorem Ipsum texts used today. "
+                                                p.text-primary2.fw-bold - Dean Tolle
+                                        .col-4.col-md-3
+                                            .card
+                                                img(src="./assets/img/paypal.svg", alt="amazon")
+                                                p.mt-4.mb-3.text-muted " It seems that only fragments of the original text remain in the Lorem Ipsum texts used today. "
+                                                p.text-primary2.fw-bold - Dean Tolle
+
+                        //- button.carousel-control-prev(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide='prev')
+                        //-     span.carousel-control-prev-icon(aria-hidden='true')
+                        //-     span.visually-hidden Previous
+                        //- button.carousel-control-next(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide='next')
+                        //-     span.carousel-control-next-icon(aria-hidden='true')
+                        //-     span.visually-hidden Next
+
+    //End: Testi
+
+    //Begin: Pricing
+    section.pricing
+        .container
+            .row.justify-content-between
+                .col-md-6.col-5-lg
+                    .pricing__heading.mb-3
+                        h2.title.mb-4 Our Comfortable Rates
+                        p.text-muted.mb-4
+                            | Start working with 
+                            span.text-primary2.fw-bold Landrick 
+                            | that can provide everything you need to generate awareness, drive traffic, connect.
+                        button(class="btn btn-primary-shadow")
+                            | Buy Now
+                            span(class="badge bg-danger ms-2") v3.5
+                .col-md-6
+                    .pricing__box
+                        .row
+                            .col-md-6
+                                .pricing__card.card
+                                    .card-body
+                                        h6.card-title.fw-bold.text-primary2.mb-4 STARTER
+                                        p.pricing__card-price.mb-4
+                                            | $39
+                                            sub /mo
+                                        ul.list-unstyle.text-muted.mb-3
+                                            li 
+                                                i(class="list-unstyle__check-icon far fa-check-circle")
+                                                | Full Access
+                                            li 
+                                                i(class="list-unstyle__check-icon far fa-check-circle")
+                                                | Source Files
+                                            li 
+                                                i(class="list-unstyle__check-icon far fa-check-circle")
+                                                | Free Appointments
+                                            li 
+                                                i(class="list-unstyle__check-icon far fa-check-circle")
+                                                | Enhanced Security
+                                        button(class="btn btn-primary-shadow") Get Started
+                            .col-md-6
+                                .pricing__card.card
+                                    .card-body
+                                        h6.card-title.fw-bold.text-primary2.mb-4 PROFESSIONAL
+                                        p.pricing__card-price.mb-4
+                                            | $59
+                                            sub /mo
+                                        ul.list-unstyle.text-muted.mb-3
+                                            li 
+                                                i(class="list-unstyle__check-icon far fa-check-circle")
+                                                | Full Access
+                                            li 
+                                                i(class="list-unstyle__check-icon far fa-check-circle")
+                                                | Source Files
+                                            li 
+                                                i(class="list-unstyle__check-icon far fa-check-circle")
+                                                | Free Appointments
+                                            li 
+                                                i(class="list-unstyle__check-icon far fa-check-circle")
+                                                | Enhanced Security
+                                        button(class="btn btn-primary-shadow") Get Started
+    .position-relative
+        .shape
+            svg(viewbox='0 0 2880 250' fill='none' xmlns='http://www.w3.org/2000/svg')
+                path(d='M720 125L2160 0H2880V250H0V125H720Z' fill='#f8f9fc')
+
+                                
+    //End: Pricing
+    
+    //Begin: FAQ
+    section.faq
+        .container
+            .row 
+                .col-md-6
+                    .faq-box
+                        .faq-box__left
+                            i(class="far fa-question-circle text-primary2")
+                        .faq-box__right
+                            h5.mb-3.fw-bold 
+                                | How our 
+                                span.text-primary2 Landrick 
+                                | work ?
+                            p.text-muted Due to its widespread use as filler text for layouts, non-readability is of great importance: human perception is tuned to recognize certain patterns and repetitions in texts.
+                .col-md-6
+                    .faq-box
+                        .faq-box__left
+                            i(class="far fa-question-circle text-primary2")
+                        .faq-box__right
+                            h5.mb-3.fw-bold What is the main process open account ?
+                            p.text-muted If the distribution of letters and 'words' is random, the reader will not be distracted from making a neutral judgement on the visual impact
+                .col-md-6
+                    .faq-box
+                        .faq-box__left
+                            i(class="far fa-question-circle text-primary2")
+                        .faq-box__right
+                            h5.mb-3.fw-bold How to make unlimited data entry ?
+                            p.text-muted Furthermore, it is advantageous when the dummy text is relatively realistic so that the layout impression of the final publication is not compromised.
+                .col-md-6
+                    .faq-box
+                        .faq-box__left
+                            i(class="far fa-question-circle text-primary2")
+                        .faq-box__right
+                            h5.mb-3.fw-bold 
+                                | Is 
+                                span.text-primary2 Landrick 
+                                | safer to use with my account ?
+                            p.text-muted Due to its widespread use as filler text for layouts, non-readability is of great importance: human perception is tuned to recognize certain patterns and repetitions in texts.
+            .row.justify-content-center
+                .col-md-8
+                    .faq__heading
+                        h2.title.mb-4 Have Question ? Get in touch!
+                        p.text-muted.mb-5
+                            | Start working with 
+                            span.text-primary2 Landrick 
+                            | that can provide everything you need to generate awareness, drive traffic, connect.
+                        button.btn.btn-primary-shadow 
+                            i(class="fas fa-phone-alt me-2")
+                            | Contact us
+    //End: FAQ
