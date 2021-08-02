@@ -193,6 +193,13 @@
     }
 }
 
+@include media-to-lg() {
+    .sub-nav {
+        &.full-width {
+            width: 960px;
+        }
+    }
+}
             
 @include media-tablet-and-mobile {
     .main-nav {

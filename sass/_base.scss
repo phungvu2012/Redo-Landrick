@@ -121,6 +121,12 @@ p {
     z-index: -1;
 }
 
+@mixin media-to-lg() {
+    @media (max-height: 75em) {
+        @content;
+    }
+}
+
 @mixin media-tablet-and-mobile() {
     @media (max-width: 61.99875em) {
         @content;

@@ -334,6 +334,12 @@ p {
   text-align: center;
 }
 
+@media (max-height: 75em) {
+  .sub-nav.full-width, .sub-nav.full-width-img {
+    width: 960px;
+  }
+}
+
 @media (max-width: 61.99875em) {
   .main-nav__list {
     position: absolute;
